@@ -16,7 +16,7 @@
     card.mount('#card-element');
 
     document.getElementById('pay-btn').onclick = async function() {
-        const {paymentIntent, error} = await stripe.confirmCardPayment("{{ $clientSecret }}", {
+        const {paymentIntent, error} = await stripe.confirmCardPayment("{{ $clientSecret }}onclick, {
             payment_method: {
                 card: card,
             }
